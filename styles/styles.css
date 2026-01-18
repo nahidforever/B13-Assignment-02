@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Common Styles */
+html {
+  font-size: 16px;
+}
+
+.container-size {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar Started */
+header {
+  background-color: #1a0b2e;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nav-logo .color-white {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-logo .color-linear {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(
+    to top,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.menu-items {
+  display: flex;
+  gap: 32px;
+}
+
+.menu-items li {
+  list-style: none;
+}
+.menu-items li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.my-buttons .btn-1 {
+  background: linear-gradient(
+    to top right,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  padding: 12px 16px;
+  border: none;
+  border-radius: 625rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-bars-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsiveness Code */
+
+@media screen and (max-width: 576px) {
+  header {
+  padding-top: 0;
+  }
+  .navbar {
+    max-width: 400px;
+    padding: 18px 20px;
+  }
+  .menu-items {
+    display: none;
+  }
+  .my-buttons {
+    display: none;
+  }
+  #nav-bars-icon {
+    color: #ffffff;
+    display: block;
+  }
+}
